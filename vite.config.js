@@ -6,5 +6,13 @@ export default defineConfig({
   server: {
     host: true,
     port: process.env.PORT || 3000
+  },
+  preview: {
+    host: true,
+    port: process.env.PORT || 3000,
+    allowedHosts: [
+      'beautybot-production-6bc9.up.railway.app',
+      '*.up.railway.app',
+    ]
   }
 })
